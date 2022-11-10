@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_accountpage_kerabat.xml" value="0.3858695652173913" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_elder_location.xml" value="0.16" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_first_aid.xml" value="0.33" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_first_aid_detail.xml" value="0.33" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_help_elder.xml" value="0.25" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_kerabat_location.xml" value="0.25" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_log_in_kerabat.xml" value="0.5" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_mainpage_kerabat.xml" value="0.33" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_patient_page.xml" value="0.25" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_profilepatient_page.xml" value="0.1897644927536232" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_riwayat_notifikasi.xml" value="0.25" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_sign_in_kerabat.xml" value="0.2015625" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_sign_up.xml" value="0.5" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_splash_screen.xml" value="0.2015625" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_warning_page.xml" value="0.1897644927536232" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/data_pasien.xml" value="0.33" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/Kelompok 3 MobApp_Ray/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/fragment_lokasi.xml" value="0.3729166666666667" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/KerabatApplication/app/src/main/res/layout/activity_kerabat_location.xml" value="0.2" />
+        <entry key="..\:/Ray's Files/College/Work and Material/5th Semester/Mobile Programing/KerabatApplication/app/src/main/res/layout/data_pasien.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Documents/KULIAH 5/Mobile App/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_mainpage_kerabat.xml" value="0.3482789855072464" />
+        <entry key="..\:/Users/ASUS/Documents/KULIAH 5/Mobile App/Kelompok3_MobApp/KerabatApplication/app/src/main/res/layout/activity_riwayat_notifikasi.xml" value="0.21784420289855072" />
+        <entry key="..\:/Users/ASUS/Documents/KULIAH 5/Mobile App/KerabatApplication/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

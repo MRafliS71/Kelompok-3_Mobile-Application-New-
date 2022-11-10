@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E6E6"
+    tools:context=".WarningPageActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="PERINGATAN PASIEN JATUH"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bg_white"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="475dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/user_circle"
+        tools:layout_editor_absoluteX="68dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:text="GORDON RAMSAY"
+        android:textColor="#1C3B60"
+        android:textSize="16sp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="484dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 Oktober, 07.11"
+        android:textColor="#5C6066"
+        android:textSize="12sp"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="512dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/close"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/help_button"
+        tools:layout_editor_absoluteX="141dp"
+        tools:layout_editor_absoluteY="565dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        app:srcCompat="@drawable/warning_red"
+        tools:layout_editor_absoluteX="90dp"
+        tools:layout_editor_absoluteY="217dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
