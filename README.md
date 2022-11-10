@@ -1,4 +1,4 @@
-# Kelompok-3_Mobile-Application-New-
+# Kelompok-3_Mobile-Application-New
 Repositori kelompok 3 mobile application
 
 ![image](https://user-images.githubusercontent.com/99678525/201103027-3e2e7e5a-c57d-4574-b31f-2b8bf258ec4c.png)
