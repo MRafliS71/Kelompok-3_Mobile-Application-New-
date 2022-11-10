@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kelompok3.fallhuge">
+
+    <application
+        android:allowBackup="true"
+        android:background="#EDEEF3"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="PasienApplication"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".PopUpFallDetection"
+            android:exported="false" />
+        <activity
+            android:name=".PopUpHelpButton"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationPage"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LogInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SignInPasienActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainPagePatientActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AccountPatientPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".KerabatPatientPageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MessagePageActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

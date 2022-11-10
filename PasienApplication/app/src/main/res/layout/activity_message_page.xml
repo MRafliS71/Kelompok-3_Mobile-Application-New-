@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEEF3"
+    tools:context=".MessagePageActivity">
+
+    <ImageButton
+        android:id="@+id/backpesanButton"
+        android:layout_width="66dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/backbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="122dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="180dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/messagetext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButton14"
+        android:layout_width="382dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="48dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/boxlistaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <ImageButton
+        android:id="@+id/imageButton17"
+        android:layout_width="382dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/boxlistaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton14" />
+
+    <ImageButton
+        android:id="@+id/imageButton18"
+        android:layout_width="382dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/boxlistaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton17" />
+
+    <ImageButton
+        android:id="@+id/imageButton22"
+        android:layout_width="382dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/boxlistaccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton18" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="216dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/button_bg1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton22" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/point"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton14"
+        app:layout_constraintStart_toStartOf="@+id/imageButton14"
+        app:layout_constraintTop_toTopOf="@+id/imageButton14"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/point"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
+        app:layout_constraintStart_toStartOf="@+id/imageButton17"
+        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:layout_constraintVertical_bias="0.444" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/point"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+        app:layout_constraintStart_toStartOf="@+id/imageButton18"
+        app:layout_constraintTop_toTopOf="@+id/imageButton18"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="36dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/point"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton22"
+        app:layout_constraintStart_toStartOf="@+id/imageButton22"
+        app:layout_constraintTop_toTopOf="@+id/imageButton22"
+        app:layout_constraintVertical_bias="0.46" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Nyalakan Air"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton14"
+        app:layout_constraintStart_toEndOf="@+id/imageView15"
+        app:layout_constraintTop_toTopOf="@+id/imageButton14"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Minta Tolong"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton17"
+        app:layout_constraintStart_toEndOf="@+id/imageView16"
+        app:layout_constraintTop_toTopOf="@+id/imageButton17"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ambilkan Makanan"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton18"
+        app:layout_constraintStart_toEndOf="@+id/imageView17"
+        app:layout_constraintTop_toTopOf="@+id/imageButton18"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Ambilkan Obat"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton22"
+        app:layout_constraintStart_toEndOf="@+id/imageView18"
+        app:layout_constraintTop_toTopOf="@+id/imageButton22"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="158dp"
+        android:layout_height="33dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/addmessagetext"
+        app:layout_constraintBottom_toBottomOf="@+id/imageButton27"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton27"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/imageButton27"
+        app:layout_constraintTop_toTopOf="@+id/imageButton27"
+        app:layout_constraintVertical_bias="0.567" />
+</androidx.constraintlayout.widget.ConstraintLayout>

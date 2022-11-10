@@ -1,0 +1,34 @@
+package com.kelompok3.fallhuge;
+
+import android.content.Intent;
+import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageButton;
+
+public class MessagePageActivity extends AppCompatActivity {
+
+    private ImageButton backpesanButton;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_message_page);
+        getSupportActionBar().hide();
+
+        backpesanButton = findViewById(R.id.backpesanButton);
+
+        backpesanButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MessagePageActivity.this, MainPagePatientActivity.class);
+                MessagePageActivity.this.startActivity(myIntent);
+            }
+        });
+    }
+}

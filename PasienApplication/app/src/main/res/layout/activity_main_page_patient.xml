@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEEF3"
+    tools:context=".MainPagePatientActivity">
+
+    <ImageButton
+        android:id="@+id/notifikasiButton"
+        android:layout_width="76dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/notificationbutton"
+        app:layout_constraintBottom_toTopOf="@+id/bantuanButton"
+        app:layout_constraintEnd_toStartOf="@+id/kerabatButton"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toEndOf="@+id/accountButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/kerabatButton"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/kerabatbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/bantuanButton"
+        android:layout_width="277dp"
+        android:layout_height="283dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/helpbutton"
+        app:layout_constraintBottom_toTopOf="@+id/pesanButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.827" />
+
+    <ImageButton
+        android:id="@+id/pesanButton"
+        android:layout_width="163dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="140dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/messagebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/accountButton"
+        android:layout_width="78dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/accountbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFallSimulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:text="Simulasi Jatuh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
