@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainpageKerabatActivity extends AppCompatActivity {
 
-    private ImageButton accountButton, notifButton, firstaidButton, patientButton, locationButton;
+    private ImageButton accountButton, notifButton, firstaidButton, patientButton, locationButton, helpelderButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         firstaidButton = findViewById(R.id.firstaid_button);
         patientButton = findViewById(R.id.patient_button);
         locationButton = findViewById(R.id.location_button);
+        helpelderButton = findViewById(R.id.helpelder_button);
 
         accountButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +55,13 @@ public class MainpageKerabatActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent myIntent = new Intent(MainpageKerabatActivity.this, KerabatLocationActivity.class);
+                MainpageKerabatActivity.this.startActivity(myIntent);
+            }
+        });
+        helpelderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent myIntent = new Intent(MainpageKerabatActivity.this, HelpElderActivity.class);
                 MainpageKerabatActivity.this.startActivity(myIntent);
             }
         });
