@@ -15,6 +15,7 @@ public class AccountPageKerabatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accountpage_kerabat);
+        getSupportActionBar().hide();
 
         backButton = findViewById(R.id.back_buttonAccount);
 

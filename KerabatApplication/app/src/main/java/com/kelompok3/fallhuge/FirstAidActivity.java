@@ -16,6 +16,7 @@ public class FirstAidActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first_aid);
+        getSupportActionBar().hide();
 
         backButton = findViewById(R.id.back_button);
         detailFirstAidButton = findViewById(R.id.detailFirstAid_Button);

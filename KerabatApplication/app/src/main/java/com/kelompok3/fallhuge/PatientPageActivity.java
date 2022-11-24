@@ -24,6 +24,7 @@ public class PatientPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_patient_page);
+        getSupportActionBar().hide();
 
         backButton = findViewById(R.id.back_buttonPatient);
         //profilePatient_Button = findViewById(R.id.profilePatientButton);

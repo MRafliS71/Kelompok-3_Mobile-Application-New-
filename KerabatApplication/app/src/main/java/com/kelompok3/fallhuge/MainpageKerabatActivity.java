@@ -15,6 +15,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainpage_kerabat);
+        getSupportActionBar().hide();
 
         accountButton = findViewById(R.id.account_button);
         notifButton = findViewById(R.id.notif_button);

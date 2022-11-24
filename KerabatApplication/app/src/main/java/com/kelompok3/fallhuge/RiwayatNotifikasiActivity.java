@@ -14,6 +14,7 @@ public class RiwayatNotifikasiActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_riwayat_notifikasi);
+        getSupportActionBar().hide();
 
         back_Button = findViewById(R.id.back_button);
 

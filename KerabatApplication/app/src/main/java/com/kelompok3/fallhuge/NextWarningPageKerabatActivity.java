@@ -10,5 +10,6 @@ public class NextWarningPageKerabatActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_next_warning_page_kerabat);
+        getSupportActionBar().hide();
     }
 }

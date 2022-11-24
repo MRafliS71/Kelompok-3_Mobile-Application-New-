@@ -21,6 +21,7 @@ public class KerabatLocationActivity extends AppCompatActivity implements OnMapR
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kerabat_location);
+        getSupportActionBar().hide();
 
         backButton = findViewById(R.id.back_button);
         mapView = findViewById(R.id.mapView);

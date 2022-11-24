@@ -22,6 +22,7 @@ public class SignInKerabatActivity extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_sign_in_kerabat);
+        getSupportActionBar().hide();
 
         buatakunButton = findViewById(R.id.buatakunButton);
         buatakunButton.setOnClickListener(new View.OnClickListener() {

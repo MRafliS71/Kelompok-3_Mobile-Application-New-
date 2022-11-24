@@ -7,7 +7,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 
 
 public class HelpElderActivity extends AppCompatActivity {
@@ -18,6 +17,7 @@ public class HelpElderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_help_elder);
+        getSupportActionBar().hide();
 
         nearhospitalButton = findViewById(R.id.nearestMedicalCenter_Button);
 
