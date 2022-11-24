@@ -15,10 +15,13 @@ import java.util.ArrayList;
 public class PatientPageActivity extends AppCompatActivity {
 
     private ImageButton backButton;
+    //private RecyclerView patient_button;
+
     ArrayList<Elder> alElder = new ArrayList<Elder>();
     AdapterPasien adapter;
     RecyclerView rvElder;
     RecyclerView.LayoutManager lm;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +30,6 @@ public class PatientPageActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         backButton = findViewById(R.id.back_buttonPatient);
-        //profilePatient_Button = findViewById(R.id.profilePatientButton);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,6 +38,17 @@ public class PatientPageActivity extends AppCompatActivity {
                 PatientPageActivity.this.startActivity(myIntent);
             }
         });
+    //    patient_button = findViewById(R.id.elders);
+
+        //profilePatient_Button = findViewById(R.id.profilePatientButton);
+
+ //       patient_button.setOnClickListener(new View.OnClickListener() {
+        //  @Override
+  //          public void onClick(View view) {
+   //             Intent myIntent = new Intent(PatientPageActivity.this, ProfilePatientPageActivity.class);
+    //            PatientPageActivity.this.startActivity(myIntent);
+      //      }
+      //  });
 //        profilePatient_Button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
