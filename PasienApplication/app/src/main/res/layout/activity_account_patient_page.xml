@@ -204,13 +204,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
-    <ImageButton
-        android:id="@+id/imageButton9"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/button_bg1"
+    <Button
+        android:id="@+id/edit_Button"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:backgroundTint="#FCCC12"
+        android:fontFamily="@font/poppins_bold"
+        android:text="EDIT"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -218,67 +221,39 @@
         app:layout_constraintTop_toBottomOf="@+id/textView10"
         app:layout_constraintVertical_bias="0.195" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/medical_Button"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#3F51B5"
         android:fontFamily="@font/poppins_bold"
-        android:text="EDIT"
-        android:textColor="#1C3B60"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton9"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton9"
-        app:layout_constraintStart_toStartOf="@+id/imageButton9"
-        app:layout_constraintTop_toTopOf="@+id/imageButton9" />
-
-    <ImageButton
-        android:id="@+id/imageButton10"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/bluebutton"
+        android:text="Medical Record"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:cornerRadius="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton9" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_Button" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/medicalrecordtext"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton10"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton10"
-        app:layout_constraintStart_toStartOf="@+id/imageButton10"
-        app:layout_constraintTop_toTopOf="@+id/imageButton10"
-        app:layout_constraintVertical_bias="0.411" />
-
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="210dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/redbutton"
+    <Button
+        android:id="@+id/logout_Button"
+        android:layout_width="251dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="36dp"
+        android:backgroundTint="#E91E63"
+        android:fontFamily="@font/poppins_bold"
+        android:text="LOG OUT"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:cornerRadius="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton10"
+        app:layout_constraintTop_toBottomOf="@+id/medical_Button"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/logouttext"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton11"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton11"
-        app:layout_constraintStart_toStartOf="@+id/imageButton11"
-        app:layout_constraintTop_toTopOf="@+id/imageButton11"
-        app:layout_constraintVertical_bias="0.411" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

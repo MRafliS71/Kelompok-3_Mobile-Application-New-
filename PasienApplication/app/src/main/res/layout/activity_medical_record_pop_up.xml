@@ -13,8 +13,10 @@
         android:background="@color/white"
         android:text="Apakah anda Ingin Mendownload FIle ini?"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="288dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/ya_button"
@@ -24,8 +26,12 @@
         android:text="YA"
         android:textColor="@color/black"
         app:cornerRadius="25dp"
-        tools:layout_editor_absoluteX="66dp"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintEnd_toStartOf="@+id/tidak_button"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.854" />
 
     <Button
         android:id="@+id/tidak_button"
@@ -35,7 +41,9 @@
         android:text="TIDAK"
         android:textColor="@color/black"
         app:cornerRadius="25dp"
-        tools:layout_editor_absoluteX="210dp"
-        tools:layout_editor_absoluteY="367dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/textView26"
+        app:layout_constraintEnd_toEndOf="@+id/textView26"
+        app:layout_constraintTop_toTopOf="@+id/textView26"
+        app:layout_constraintVertical_bias="0.854" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

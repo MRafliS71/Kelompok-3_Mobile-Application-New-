@@ -17,12 +17,6 @@ public class PatientPageActivity extends AppCompatActivity {
     private ImageButton backButton;
     //private RecyclerView patient_button;
 
-    ArrayList<Elder> alElder = new ArrayList<Elder>();
-    AdapterPasien adapter;
-    RecyclerView rvElder;
-    RecyclerView.LayoutManager lm;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +32,13 @@ public class PatientPageActivity extends AppCompatActivity {
                 PatientPageActivity.this.startActivity(myIntent);
             }
         });
+
+    ArrayList<Elder> alElder = new ArrayList<Elder>();
+    AdapterPasien adapter;
+    RecyclerView rvElder;
+    RecyclerView.LayoutManager lm;
+
+
     //    patient_button = findViewById(R.id.elders);
 
         //profilePatient_Button = findViewById(R.id.profilePatientButton);

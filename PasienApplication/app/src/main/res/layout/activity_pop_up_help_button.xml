@@ -37,36 +37,28 @@
         android:id="@+id/imageButton4"
         android:layout_width="277dp"
         android:layout_height="277dp"
+        android:layout_marginTop="20dp"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
-        app:layout_constraintBottom_toTopOf="@+id/cancelButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32"
         app:srcCompat="@drawable/needhelpbuttoncountdown" />
 
-    <ImageButton
-        android:id="@+id/cancelButton"
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/tidak_Button2"
+        android:layout_width="230dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="120dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/yellowbutton" />
-
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:backgroundTint="#FCCC12"
         android:fontFamily="@font/poppins_bold"
         android:text="TIDAK"
         android:textColor="#1C3B60"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/cancelButton"
-        app:layout_constraintEnd_toEndOf="@+id/cancelButton"
-        app:layout_constraintStart_toStartOf="@+id/cancelButton"
-        app:layout_constraintTop_toTopOf="@+id/cancelButton" />
+        android:textSize="20sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

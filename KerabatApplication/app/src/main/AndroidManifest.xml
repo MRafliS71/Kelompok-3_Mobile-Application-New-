@@ -75,9 +75,6 @@
             android:name=".MainpageKerabatActivity"
             android:exported="true" />
         <activity
-            android:name=".NextWarningPageKerabatActivity"
-            android:exported="false" />
-        <activity
             android:name=".PatientPageActivity"
             android:exported="false" />
         <activity

@@ -83,17 +83,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageButton18" />
 
-    <ImageButton
-        android:id="@+id/imageButton27"
-        android:layout_width="216dp"
-        android:layout_height="70dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/button_bg1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton22" />
 
     <ImageView
         android:id="@+id/imageView15"
@@ -199,16 +188,20 @@
         app:layout_constraintTop_toTopOf="@+id/imageButton22"
         app:layout_constraintVertical_bias="0.441" />
 
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="158dp"
-        android:layout_height="33dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/addmessagetext"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton27"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton27"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/imageButton27"
-        app:layout_constraintTop_toTopOf="@+id/imageButton27"
-        app:layout_constraintVertical_bias="0.567" />
+    <Button
+        android:id="@+id/tambahpasien_Button"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#FCCC12"
+        android:fontFamily="@font/poppins_bold"
+        android:text="+ TAMBAH PESAN"
+        android:textColor="#1C3B60"
+        android:textSize="20sp"
+        app:cornerRadius="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton22" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
