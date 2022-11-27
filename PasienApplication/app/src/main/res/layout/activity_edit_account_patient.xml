@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextFirstname" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/editTextPassword"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:background="@drawable/form1"
@@ -65,11 +65,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername"
         app:layout_constraintVertical_bias="0.113" />
 
     <EditText
-        android:id="@+id/editTextTextPassword3"
+        android:id="@+id/editTextTextConfirmPass"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:background="@drawable/form1"
@@ -83,11 +83,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
         app:layout_constraintVertical_bias="0.164" />
 
     <EditText
-        android:id="@+id/editTextTextEmail2"
+        android:id="@+id/editTextUsername"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
@@ -130,7 +130,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword3"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextConfirmPass"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -167,7 +167,7 @@
         android:textColor="#1C3B60"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmail2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.196"
         app:layout_constraintStart_toStartOf="parent" />
@@ -180,7 +180,7 @@
         android:textColor="#1C3B60"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.224"
         app:layout_constraintStart_toStartOf="parent" />
@@ -193,7 +193,7 @@
         android:textColor="#1C3B60"
         android:textSize="12sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword3"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextConfirmPass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.201"
         app:layout_constraintStart_toStartOf="parent" />

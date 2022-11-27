@@ -17,8 +17,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_slogan" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextPassword"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="40dp"
@@ -31,16 +31,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
 
-    <EditText
-        android:id="@+id/editTextTextEmail"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextUsername"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="43dp"
         android:background="@drawable/form1"
         android:ems="10"
-        android:hint="Email/Username"
+        android:hint="Username"
         android:inputType="textPersonName|text|textEmailAddress"
         android:paddingLeft="20dp"
         android:textSize="12sp"
@@ -53,13 +53,13 @@
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username/Email"
+        android:text="Username"
+        android:textColor="#1C3B60"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:textColor="#1C3B60"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmail"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.26"
+        app:layout_constraintHorizontal_bias="0.22"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -70,7 +70,7 @@
         android:textSize="12sp"
         android:textStyle="bold"
         android:textColor="#1C3B60"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.229"
         app:layout_constraintStart_toStartOf="parent" />
@@ -116,6 +116,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
