@@ -1,0 +1,8 @@
+Keterangan nama file:
+1. mobapp file mysql, data2 akun ada di sini
+2. mobappproject file php, ngeset backend alurnya dan lainnya ada id sini
+
+1. Liat tutorial: https://www.youtube.com/watch?v=X8oD4q3XtQQ (Note: Kodingan dah beres tinggal ikutin cara2nya kaya nyimpen file, import class, dll)
+2. Pindahin file mobapp ke C:\xampp\mysql\data, biar udah ada isinya/akunnya. kalo ngga mau ya terserah sih, gapapa juga
+3. Koneksi hp yg dicoba sama laptop yg dijadiin database harus sama, soon cari cara biar fleksibel ngga usah kaya diatas
+4. Liat video tutorial sama ikutin sampe beres, baru nanya aing
