@@ -7,7 +7,7 @@
     tools:context=".SignInKerabatActivity"
     android:background="#EDEEF3">
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextFirstname"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -24,7 +24,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextUsername" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextUsername"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextLastname"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextFirstname" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmail"
         app:layout_constraintVertical_bias="0.113" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextConfirmPass"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -93,7 +93,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
         app:layout_constraintVertical_bias="0.164" />
 
-    <EditText
+    <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/editTextTextEmail"
         android:layout_width="280dp"
         android:layout_height="50dp"
