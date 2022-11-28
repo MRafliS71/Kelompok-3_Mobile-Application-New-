@@ -34,7 +34,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         notifButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainpageKerabatActivity.this, RiwayatNotifikasiActivity.class);
+                Intent myIntent = new Intent(MainpageKerabatActivity.this, NotificationPage.class);
                 MainpageKerabatActivity.this.startActivity(myIntent);
             }
         });
@@ -62,7 +62,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         helpelderButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainpageKerabatActivity.this, HelpElderActivity.class);
+                Intent myIntent = new Intent(MainpageKerabatActivity.this, WarningPageActivity.class);
                 MainpageKerabatActivity.this.startActivity(myIntent);
             }
         });

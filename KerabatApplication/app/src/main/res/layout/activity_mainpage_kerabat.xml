@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout"
@@ -9,77 +9,86 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageButton
-        android:id="@+id/account_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:src="@drawable/icon_account"
-        app:layout_constraintBottom_toTopOf="@+id/firstaid_button"
-        app:layout_constraintEnd_toStartOf="@+id/notif_button"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.34" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageButton
-        android:id="@+id/notif_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="36dp"
-        android:background="#00FFFFFF"
-        android:src="@drawable/notif"
-        app:layout_constraintBottom_toTopOf="@+id/firstaid_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.333" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/firstaid_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        android:src="@drawable/pp"
-        app:layout_constraintBottom_toTopOf="@+id/patient_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.845" />
+            <ImageButton
+                android:id="@+id/account_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/icon_account"
+                android:layout_marginStart="36dp"
+                app:layout_constraintHorizontal_bias="0.144"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
 
-    <ImageButton
-        android:id="@+id/patient_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:background="#00FFFFFF"
-        android:src="@drawable/pasien"
-        app:layout_constraintBottom_toTopOf="@+id/location_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toStartOf="parent" />
+            <ImageButton
+                android:id="@+id/helpelder_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                app:layout_constraintEnd_toStartOf="@+id/notif_button"
+                app:layout_constraintStart_toEndOf="@+id/account_button"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/help_button" />
 
-    <ImageButton
-        android:id="@+id/location_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:background="#00FFFFFF"
-        android:src="@drawable/lokasi"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent" />
+            <ImageButton
+                android:id="@+id/notif_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="36dp"
+                android:background="#00FFFFFF"
+                android:src="@drawable/notif"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/helpelder_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/firstaid_button"
-        app:layout_constraintEnd_toStartOf="@+id/notif_button"
-        app:layout_constraintStart_toEndOf="@+id/account_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/help_button" />
+            <ImageButton
+                android:id="@+id/firstaid_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/pp"
+                app:layout_constraintBottom_toTopOf="@+id/patient_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/account_button"
+                android:layout_marginTop="20dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <ImageButton
+                android:id="@+id/patient_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/pasien"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/firstaid_button"
+                android:layout_marginTop="17dp"/>
+
+            <ImageButton
+                android:id="@+id/location_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:src="@drawable/lokasi"
+                app:layout_constraintTop_toBottomOf="@id/patient_button"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="17dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -2,4 +2,11 @@
     <string name="app_name">Kerabat Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="peringatan_pasien_jatuh">PERINGATAN\nPASIEN JATUH</string>
+    <string name="geser_untuk_menolong">Geser untuk menolong</string>
+    <string name="jangan_panik_dan_tetap_tenang">Jangan Panik\ndan tetap tenang</string>
+    <string name="beberapa_tindakan_yang_dapat_kamu_lakukan">Beberapa tindakan yang dapat kamu lakukan:</string>
+    <string name="lokasi_pasien">LOKASI PASIEN</string>
+    <string name="rs_terdekat">RS Terdekat</string>
+    <string name="pertolongan_pertama">Pertolongan Pertama</string>
 </resources>

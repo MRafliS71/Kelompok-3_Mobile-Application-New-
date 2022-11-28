@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout4"
@@ -8,252 +8,263 @@
     android:background="#EDEEF3"
     tools:context=".AccountPatientPageActivity">
 
-    <ImageButton
-        android:id="@+id/backaccountButton"
-        android:layout_width="66dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="klik ini untuk kembali ke Kerabat Patient Page"
-        android:scaleType="fitXY"
-        android:src="@drawable/backbutton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="ImageContrastCheck" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="180dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="17dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/akunpatienttext"
-        app:layout_constraintBottom_toBottomOf="@+id/backaccountButton"
-        app:layout_constraintStart_toEndOf="@+id/backaccountButton"
-        app:layout_constraintTop_toTopOf="@+id/backaccountButton" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageView
-        android:id="@+id/imageView9"
-        android:layout_width="187dp"
-        android:layout_height="187dp"
-        android:layout_marginTop="24dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/ppexample"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+            <ImageButton
+                android:id="@+id/backaccountButton"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="20dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="klik ini untuk kembali ke Kerabat Patient Page"
+                android:scaleType="fitXY"
+                android:src="@drawable/backbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginStart="15dp"
+                tools:ignore="ImageContrastCheck" />
 
-    <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="65dp"
-        android:layout_height="66dp"
-        android:layout_marginTop="130dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="klik ini untuk mengganti foto profil"
-        android:scaleType="fitXY"
-        android:src="@drawable/editppbutton"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView9"
-        app:layout_constraintVertical_bias="0.0" />
+            <ImageView
+                android:id="@+id/namePage"
+                android:layout_width="180dp"
+                android:layout_height="35dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/akunpatienttext"
+                app:layout_constraintBottom_toBottomOf="@+id/backaccountButton"
+                app:layout_constraintTop_toTopOf="@+id/backaccountButton"
+                app:layout_constraintStart_toEndOf="@id/backaccountButton"
+                android:layout_marginStart="20dp"
+                app:layout_constraintVertical_bias="0.39" />
 
-    <TextView
-        android:id="@+id/AccountName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="212dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Sang Kakek"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView9" />
+            <ImageView
+                android:id="@+id/ppAccountPatient"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ppexample"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/namePage" />
 
-    <TextView
-        android:id="@+id/emailAccount"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="GrandDad@gmail.com"
-        android:textColor="#616161"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/AccountName"
-        app:layout_constraintVertical_bias="0.0" />
+            <ImageButton
+                android:id="@+id/editPPAccount"
+                android:layout_width="65dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="130dp"
+                android:background="#00FFFFFF"
+                android:contentDescription="klik ini untuk mengganti foto profil"
+                android:scaleType="fitXY"
+                android:src="@drawable/editppbutton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.676"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ppAccountPatient"
+                app:layout_constraintVertical_bias="0.0" />
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="200dp"
-        android:layout_height="4dp"
-        android:layout_marginTop="30dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/emailAccount"
-        app:layout_constraintVertical_bias="0.036" />
+            <TextView
+                android:id="@+id/AccountName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="212dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Sang Kakek"
+                android:textColor="#1C3B60"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ppAccountPatient" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="No Telp"
-        android:textColor="#616161"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+            <TextView
+                android:id="@+id/emailAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GrandDad@gmail.com"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/AccountName"
+                app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Umur"
-        android:textColor="#616161"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="200dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="30dp"
+                android:background="?android:attr/listDivider"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/emailAccount"
+                app:layout_constraintVertical_bias="0.036" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Jenis Kelamin"
-        android:textColor="#616161"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+            <TextView
+                android:id="@+id/tvNoTelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="No Telp"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="10dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Alamat"
-        android:textColor="#616161"
-        android:textSize="12sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+            <TextView
+                android:id="@+id/tvAge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Umur"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNoTelp" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="80dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="081234567890"
-        android:textColor="#1C3B60"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+            <TextView
+                android:id="@+id/tvGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jenis Kelamin"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvAge" />
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="65 Tahun"
-        android:textColor="#1C3B60"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+            <TextView
+                android:id="@+id/tvAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Alamat"
+                android:textColor="#616161"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvGender" />
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Pria"
-        android:textColor="#1C3B60"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+            <TextView
+                android:id="@+id/noTelpAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="081234567890"
+                android:textColor="#1C3B60"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="80dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Jalan Tikus 1 No 4 Bandung"
-        android:textColor="#1C3B60"
-        android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+            <TextView
+                android:id="@+id/ageAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="65 Tahun"
+                android:textColor="#1C3B60"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/noTelpAccount" />
 
-    <Button
-        android:id="@+id/edit_Button"
-        android:layout_width="251dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#FCCC12"
-        android:fontFamily="@font/poppins_bold"
-        android:text="EDIT"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="0.195" />
+            <TextView
+                android:id="@+id/genderAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Pria"
+                android:textColor="#1C3B60"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ageAccount" />
 
-    <Button
-        android:id="@+id/medical_Button"
-        android:layout_width="251dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="#3F51B5"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Medical Record"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_Button" />
+            <TextView
+                android:id="@+id/addressAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Jalan Tikus 1 No 4 Bandung"
+                android:textColor="#1C3B60"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genderAccount" />
 
-    <Button
-        android:id="@+id/logout_Button"
-        android:layout_width="251dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="36dp"
-        android:backgroundTint="#E91E63"
-        android:fontFamily="@font/poppins_bold"
-        android:text="LOG OUT"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/medical_Button"
-        app:layout_constraintVertical_bias="0.0" />
+            <Button
+                android:id="@+id/edit_Button"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
+                android:backgroundTint="#FCCC12"
+                android:fontFamily="@font/poppins_bold"
+                android:text="EDIT"
+                android:textColor="#1C3B60"
+                android:textSize="20sp"
+                app:cornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressAccount"
+                app:layout_constraintVertical_bias="0.195" />
 
+            <Button
+                android:id="@+id/medical_Button"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="36dp"
+                android:backgroundTint="#3F51B5"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Medical Record"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_Button" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/logout_Button"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
+                android:layout_marginBottom="36dp"
+                android:backgroundTint="#E91E63"
+                android:fontFamily="@font/poppins_bold"
+                android:text="LOG OUT"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="25dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/medical_Button"
+                app:layout_constraintVertical_bias="0.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

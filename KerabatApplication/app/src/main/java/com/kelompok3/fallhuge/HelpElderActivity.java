@@ -21,7 +21,7 @@ public class HelpElderActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
         nearhospitalButton = findViewById(R.id.nearestMedicalCenter_Button);
-        xButton = findViewById(R.id.x_button);
+        xButton = findViewById(R.id.closeButton);
         ppButton = findViewById(R.id.firstaid_button);
 
         nearhospitalButton.setOnClickListener(new View.OnClickListener() {

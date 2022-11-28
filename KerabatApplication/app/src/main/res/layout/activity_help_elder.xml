@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,101 +7,111 @@
     android:background="#E6E6E6"
     tools:context=".HelpElderActivity">
 
-    <ImageButton
-        android:id="@+id/x_button"
-        android:layout_width="52dp"
-        android:layout_height="40dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.955"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.394"
-        app:srcCompat="@drawable/close" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="251dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="111dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="JANGAN PANIK DAN TETAP TENANG"
-        android:textAlignment="center"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/warningpurplebutton" />
+            <ImageButton
+                android:id="@+id/closeButton"
+                android:layout_width="52dp"
+                android:layout_height="40dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="28dp"
+                app:srcCompat="@drawable/close" />
 
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="11dp"
-        android:text="Beberapa tindakan yang dapat kamu lakukan:"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+            <TextView
+                android:id="@+id/JanganPanik"
+                android:layout_width="251dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/jangan_panik_dan_tetap_tenang"
+                android:textAlignment="center"
+                android:textColor="#1C3B60"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/patientLocation_Button"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="#FCCC12"
-        android:fontFamily="@font/poppins_bold"
-        android:text="LOKASI PASIEN"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+            <ImageView
+                android:id="@+id/warningPurple"
+                android:layout_width="230dp"
+                android:layout_height="230dp"
+                android:layout_marginTop="12dp"
+                android:background="#00FFFFFF"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/JanganPanik"
+                app:srcCompat="@drawable/warningpurplebutton" />
 
-    <Button
-        android:id="@+id/nearestMedicalCenter_Button"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:backgroundTint="#FCCC12"
-        android:fontFamily="@font/poppins_bold"
-        android:text="RS Terdekat"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/patientLocation_Button"
-        tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:text="@string/beberapa_tindakan_yang_dapat_kamu_lakukan"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/warningPurple" />
 
-    <Button
-        android:id="@+id/firstaid_button"
-        android:layout_width="230dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:backgroundTint="#FCCC12"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Pertolongan
-        Pertama"
-        android:textColor="#1C3B60"
-        android:textSize="16sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nearestMedicalCenter_Button"
-        tools:ignore="MissingConstraints" />
+            <Button
+                android:id="@+id/patientLocation_Button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#FCCC12"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/lokasi_pasien"
+                android:textColor="#1C3B60"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                app:cornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <Button
+                android:id="@+id/nearestMedicalCenter_Button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:backgroundTint="#FCCC12"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/rs_terdekat"
+                android:textColor="#1C3B60"
+                android:textSize="20sp"
+                app:cornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/patientLocation_Button"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/firstaid_button"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:backgroundTint="#FCCC12"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/pertolongan_pertama"
+                android:textColor="#1C3B60"
+                android:textSize="16sp"
+                app:cornerRadius="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nearestMedicalCenter_Button"
+                tools:ignore="MissingConstraints" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

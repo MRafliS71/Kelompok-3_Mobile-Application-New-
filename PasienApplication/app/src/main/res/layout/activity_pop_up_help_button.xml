@@ -19,10 +19,7 @@
         android:lineSpacingExtra="6sp"
         android:text="@string/sepertinya_"
         android:textColor="#1C3B60"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="24sp" />
 
     <ImageButton
         android:id="@+id/NeedHelpButton"
