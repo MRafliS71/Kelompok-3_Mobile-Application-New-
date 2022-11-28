@@ -44,11 +44,12 @@
         app:srcCompat="@drawable/bgnotification" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/bgNotif"
         android:layout_width="370dp"
         android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
         app:layout_constraintStart_toStartOf="@+id/imageView21"
         app:layout_constraintTop_toTopOf="@+id/imageView21"
@@ -60,9 +61,10 @@
         android:layout_height="70dp"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/imageView21"
         app:layout_constraintStart_toStartOf="@+id/imageView21"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/bgNotif"
         app:srcCompat="@drawable/bgmessagenotif" />
 
     <ImageView
@@ -72,9 +74,10 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNotif"
+        app:layout_constraintStart_toStartOf="@+id/bgNotif"
+        app:layout_constraintTop_toTopOf="@+id/bgNotif"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ppacount_default" />
 
@@ -85,6 +88,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
         app:layout_constraintStart_toStartOf="@+id/imageButton3"
         app:layout_constraintTop_toTopOf="@+id/imageButton3"
@@ -99,6 +103,7 @@
         android:text="TERJATUH!!"
         android:textColor="#1C3B60"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/imageView25" />
@@ -112,6 +117,7 @@
         android:text="Ambilkan Obat"
         android:textColor="#1C3B60"
         android:textSize="16sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView26"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toTopOf="@+id/imageView26" />
@@ -125,6 +131,7 @@
         android:text="Darurat"
         android:textColor="#5C6066"
         android:textSize="9sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
         app:layout_constraintTop_toTopOf="@+id/imageView25"
@@ -139,6 +146,7 @@
         android:text="Bantuan"
         android:textColor="#5C6066"
         android:textSize="9sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toTopOf="@+id/imageView26"
@@ -153,6 +161,7 @@
         android:text="15 Oktober 2022"
         android:textColor="#5C6066"
         android:textSize="9sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView25"
         app:layout_constraintStart_toEndOf="@+id/imageView25"
         app:layout_constraintTop_toBottomOf="@+id/textView20"
@@ -167,6 +176,7 @@
         android:text="12 Oktober 2022"
         android:textColor="#5C6066"
         android:textSize="9sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageView26"
         app:layout_constraintStart_toEndOf="@+id/imageView26"
         app:layout_constraintTop_toBottomOf="@+id/textView27"
@@ -181,10 +191,11 @@
         android:text="10.33"
         android:textColor="#5C6066"
         android:textSize="9sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
-        app:layout_constraintEnd_toEndOf="@+id/imageView28"
-        app:layout_constraintStart_toStartOf="@+id/imageView28"
-        app:layout_constraintTop_toBottomOf="@+id/imageView28" />
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNotif"
+        app:layout_constraintEnd_toEndOf="@+id/ikonNotif"
+        app:layout_constraintStart_toStartOf="@+id/ikonNotif"
+        app:layout_constraintTop_toBottomOf="@+id/ikonNotif" />
 
     <TextView
         android:id="@+id/textView30"
@@ -195,19 +206,21 @@
         android:text="13.05"
         android:textColor="#5C6066"
         android:textSize="9sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/imageButton3"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
         app:layout_constraintStart_toStartOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
     <ImageView
-        android:id="@+id/imageView28"
+        android:id="@+id/ikonNotif"
         android:layout_width="25dp"
         android:layout_height="25dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintTop_toTopOf="@+id/imageButton2"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/bgNotif"
+        app:layout_constraintTop_toTopOf="@+id/bgNotif"
         app:srcCompat="@drawable/triangelemergency" />
 
     <ImageView
@@ -216,8 +229,19 @@
         android:layout_height="25dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="20dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="@+id/imageButton3"
         app:layout_constraintTop_toTopOf="@+id/imageButton3"
         app:srcCompat="@drawable/yellowbellnotif" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotification"
+        android:layout_width="370dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

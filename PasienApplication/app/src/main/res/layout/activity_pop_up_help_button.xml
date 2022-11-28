@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,58 +7,78 @@
     android:background="#EDEEF3"
     tools:context=".PopUpHelpButton">
 
+    <!-- Sepertinya kamu membutuhkan bantuan -->
     <TextView
-        android:id="@+id/MasukDisini"
+        android:id="@+id/sepertinya_"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
         android:fontFamily="@font/poppins_bold"
-        android:text=" Sepertinya kamu"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="6sp"
+        android:text="@string/sepertinya_"
         android:textColor="#1C3B60"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="membutuhkan bantuan"
-        android:textColor="#1C3B60"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MasukDisini" />
-
     <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="277dp"
-        android:layout_height="277dp"
-        android:layout_marginTop="20dp"
+        android:id="@+id/NeedHelpButton"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_centerInParent="true"
         android:background="#00FFFFFF"
         android:scaleType="fitXY"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView32"
-        app:srcCompat="@drawable/needhelpbuttoncountdown" />
+        app:layout_constraintTop_toBottomOf="@+id/sepertinya_"
+        app:srcCompat="@drawable/needhelpbutton" />
 
-    <Button
-        android:id="@+id/tidak_Button2"
-        android:layout_width="230dp"
+    <com.example.swipebutton_library.SwipeButton
+        android:id="@+id/swipe_button"
+        android:layout_width="281dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="150dp"
+        app:button_background_tint="@android:color/holo_orange_light"
+        app:inner_text="----------------------------------------------->"
+        app:inner_text_color="@color/white"
+        app:inner_text_size="15dp"
+        app:outer_background_height="51dp"
+        app:outer_background_tint="#C6C6C6"
+        app:trail_background_tint="@android:color/holo_orange_light"
+        app:button_background_src="@drawable/tidak"
+        app:button_background_padding="20dp"
+        app:button_width="120dp"
+        app:has_active_status="false"
+        app:has_finish_animation="false"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDrawable="@drawable/cpb"
+        />
+
+    <TextView
+        android:id="@+id/geserUntukBatal"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="#FCCC12"
+        android:text="@string/geser_untuk_membatalkan"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="115dp"
+        android:layout_alignParentBottom="true"
         android:fontFamily="@font/poppins_bold"
-        android:text="TIDAK"
-        android:textColor="#1C3B60"
-        android:textSize="20sp"
-        app:cornerRadius="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        android:textSize="12sp"
+        android:textColor="#5C6066"
+        />
 
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

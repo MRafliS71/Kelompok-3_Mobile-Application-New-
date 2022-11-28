@@ -39,38 +39,39 @@ public class LogInActivity extends AppCompatActivity {
                 username = String.valueOf(editTextUsername.getText());
                 password = String.valueOf(editTextPassword.getText());
 
-                if(!username.equals("") && !password.equals("")) {
-                    Handler handler = new Handler(Looper.getMainLooper());
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            //Starting Write and Read data with URL
-                            //Creating array for parameters
-                            String[] field = new String[2];
-                            field[0] = "username";
-                            field[1] = "password";
-                            //Creating array for data
-                            String[] data = new String[2];
-                            data[0] = username;
-                            data[1] = password;
-                            PutData putData = new PutData("http://192.168.119.70/mobappproject/akunPasien/login.php", "POST", field, data);
-                            if (putData.startPut()) {
-                                if (putData.onComplete()) {
-                                    String result = putData.getResult();
-                                    Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
-                                    if(result.equals("Login Success")){
-                                        //Set agar tombol bisa diklik dan pindah page
-                                        Intent myIntent = new Intent(LogInActivity.this, MainPagePatientActivity.class);
-                                        LogInActivity.this.startActivity(myIntent);
-                                    }
-                                }
-                            }
-                            //End Write and Read data with URL
-                        }
-                    });
-                }else{
-                    Toast.makeText(getApplicationContext(), "Email atau Password Salah", Toast.LENGTH_SHORT).show();
-                }
+//                if(!username.equals("") && !password.equals("")) {
+//                    Handler handler = new Handler(Looper.getMainLooper());
+//                    handler.post(new Runnable() {
+//                        @Override
+//                        public void run() {
+//                            //Starting Write and Read data with URL
+//                            //Creating array for parameters
+//                            String[] field = new String[2];
+//                            field[0] = "username";
+//                            field[1] = "password";
+//                            //Creating array for data
+//                            String[] data = new String[2];
+//                            data[0] = username;
+//                            data[1] = password;
+//                            PutData putData = new PutData("http://192.168.119.70/mobappproject/akunPasien/login.php", "POST", field, data);
+//                            if (putData.startPut()) {
+//                                if (putData.onComplete()) {
+//                                    String result = putData.getResult();
+//                                    Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+//                                    if(result.equals("Login Success")){
+//                                        //Set agar tombol bisa diklik dan pindah page
+//
+//                                    }
+//                                }
+//                            }
+//                            //End Write and Read data with URL
+//                        }
+//                    });
+//                }else{
+//                    Toast.makeText(getApplicationContext(), "Email atau Password Salah", Toast.LENGTH_SHORT).show();
+//                }
+                Intent myIntent = new Intent(LogInActivity.this, MainPagePatientActivity.class);
+                LogInActivity.this.startActivity(myIntent);
             }
         });
 

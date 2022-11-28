@@ -2,4 +2,23 @@
     <string name="app_name">My Application</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sepertinya_">
+        Sepertinya kamu \nmembutuhkan bantuan
+    </string>
+
+    <string name="sepertinya_2">
+        Sepertinya kamu \nterjatuh !!
+    </string>
+
+    <string name="tidak">TIDAK</string>
+    <string name="geser_untuk_membatalkan">Geser untuk membatalkan</string>
+    <string name="terjatuh">TERJATUH!!</string>
+    <string name="darurat">Darurat</string>
+    <string name="_15_oktober_2022">15 Oktober 2022</string>
+    <string name="_10_33">10.33</string>
+    <string name="ambilkan_obat">Ambilkan Obat</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="_12_agustus_2022">12 Agustus 2022</string>
+    <string name="_19_26">19.26</string>
 </resources>

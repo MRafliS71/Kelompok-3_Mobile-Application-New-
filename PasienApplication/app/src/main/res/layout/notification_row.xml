@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/bgNotif"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bgmessagenotif" />
+
+    <ImageView
+        android:id="@+id/ppAccount"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNotif"
+        app:layout_constraintStart_toStartOf="@+id/bgNotif"
+        app:layout_constraintTop_toTopOf="@+id/bgNotif"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ppacount_default" />
+
+    <TextView
+        android:id="@+id/tvJudul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#1C3B60"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ppAccount"
+        app:layout_constraintStart_toEndOf="@+id/ppAccount"
+        app:layout_constraintTop_toTopOf="@+id/ppAccount" />
+
+    <TextView
+        android:id="@+id/tvJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#5C6066"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvJudul"
+        app:layout_constraintStart_toEndOf="@+id/ppAccount"
+        app:layout_constraintTop_toTopOf="@+id/ppAccount"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SmallSp" />
+
+    <TextView
+        android:id="@+id/tvTanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#5C6066"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ppAccount"
+        app:layout_constraintStart_toEndOf="@+id/ppAccount"
+        app:layout_constraintTop_toBottomOf="@+id/tvJudul"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/ikonNotif"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/bgNotif"
+        app:layout_constraintTop_toTopOf="@+id/bgNotif"
+        app:srcCompat="@drawable/yellowbellnotif" />
+
+    <TextView
+        android:id="@+id/tvWaktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#5C6066"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/bgNotif"
+        app:layout_constraintEnd_toEndOf="@+id/ikonNotif"
+        app:layout_constraintStart_toStartOf="@+id/ikonNotif"
+        app:layout_constraintTop_toBottomOf="@+id/ikonNotif"
+        tools:ignore="SmallSp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
