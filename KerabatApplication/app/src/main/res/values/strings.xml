@@ -9,4 +9,5 @@
     <string name="lokasi_pasien">LOKASI PASIEN</string>
     <string name="rs_terdekat">RS Terdekat</string>
     <string name="pertolongan_pertama">Pertolongan Pertama</string>
+    <string name="tambah_pasien">+ TAMBAH PASIEN</string>
 </resources>

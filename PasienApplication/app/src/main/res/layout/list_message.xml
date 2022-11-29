@@ -10,8 +10,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/pointer"
@@ -31,12 +30,12 @@
             android:fontFamily="@font/poppins_bold"
             android:text="Minta Tolong"
             android:textColor="#1C3B60"
-            android:textSize="24dp"
+            android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@id/pointer"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.55"
-            android:layout_marginLeft="18dp"/>
+            android:layout_marginStart="18dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
