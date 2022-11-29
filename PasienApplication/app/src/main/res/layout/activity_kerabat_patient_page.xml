@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/frameLayout3"
@@ -8,267 +8,55 @@
     android:background="#EDEEF3"
     tools:context=".KerabatPatientPageActivity">
 
-    <ImageButton
-        android:id="@+id/backKerabatButton"
-        android:layout_width="63dp"
-        android:layout_height="64dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/backbutton"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="241dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="28dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/kerabatpatienttext"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.215"
-        app:layout_constraintStart_toEndOf="@+id/backKerabatButton"
-        app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <ImageButton
-        android:id="@+id/imageButton13"
-        android:layout_width="382dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="48dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/boxlistaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+            <ImageButton
+                android:id="@+id/backKerabatButton"
+                android:layout_width="66dp"
+                android:layout_height="66dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="#00FFFFFF"
+                android:scaleType="fitXY"
+                android:src="@drawable/backbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButton23"
-        android:layout_width="382dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/boxlistaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton16" />
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="241dp"
+                android:layout_height="42dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/kerabatpatienttext"
+                app:layout_constraintBottom_toBottomOf="@id/backKerabatButton"
+                app:layout_constraintStart_toEndOf="@+id/backKerabatButton"
+                app:layout_constraintTop_toTopOf="@id/backKerabatButton"
+                app:layout_constraintVertical_bias="0.35000002"
+                android:layout_marginStart="20dp"/>
 
-    <ImageButton
-        android:id="@+id/imageButton25"
-        android:layout_width="382dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/boxlistaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton23" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvKerabarPatient"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="70dp"
+                android:layout_marginHorizontal="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.52"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/backKerabatButton"
+                tools:itemCount="4"
+                tools:listitem="@layout/list_kerabat" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="58dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ppacount_default"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton13"
-        app:layout_constraintStart_toStartOf="@+id/imageButton13"
-        app:layout_constraintTop_toTopOf="@+id/imageButton13"
-        app:layout_constraintVertical_bias="0.384" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <ImageView
-        android:id="@+id/imageView13"
-        android:layout_width="58dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ppacount_default"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton23"
-        app:layout_constraintStart_toStartOf="@+id/imageButton23"
-        app:layout_constraintTop_toTopOf="@+id/imageButton23"
-        app:layout_constraintVertical_bias="0.307" />
+    </ScrollView>
 
-    <ImageView
-        android:id="@+id/imageView14"
-        android:layout_width="58dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ppacount_default"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton25"
-        app:layout_constraintStart_toStartOf="@+id/imageButton25"
-        app:layout_constraintTop_toTopOf="@+id/imageButton25"
-        app:layout_constraintVertical_bias="0.384" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="AHMAD MUFLIH"
-        android:textColor="#1C3B60"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton13"
-        app:layout_constraintStart_toEndOf="@+id/imageView10"
-        app:layout_constraintTop_toTopOf="@+id/imageButton13" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="GHIYATS A"
-        android:textColor="#1C3B60"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton23"
-        app:layout_constraintStart_toEndOf="@+id/imageView13"
-        app:layout_constraintTop_toTopOf="@+id/imageButton23" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="GHIYATS A"
-        android:textColor="#1C3B60"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton25"
-        app:layout_constraintStart_toEndOf="@+id/imageView14"
-        app:layout_constraintTop_toTopOf="@+id/imageButton25" />
-
-    <ImageButton
-        android:id="@+id/imageButton15"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="36dp"
-        android:background="#00FFFFFF"
-        android:rotationX="178"
-        android:scaleType="fitXY"
-        android:src="@drawable/arrowcircle_up"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton13"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton13"
-        app:layout_constraintTop_toTopOf="@+id/imageButton13"
-        app:layout_constraintVertical_bias="0.431" />
-
-    <ImageButton
-        android:id="@+id/imageButton24"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="36dp"
-        android:background="#00FFFFFF"
-        android:rotationX="178"
-        android:scaleType="fitXY"
-        android:src="@drawable/arrowcircle_up"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton23"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton23"
-        app:layout_constraintTop_toTopOf="@+id/imageButton23"
-        app:layout_constraintVertical_bias="0.438" />
-
-    <ImageButton
-        android:id="@+id/imageButton26"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="36dp"
-        android:background="#00FFFFFF"
-        android:rotationX="178"
-        android:scaleType="fitXY"
-        android:src="@drawable/arrowcircle_up"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton25"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton25"
-        app:layout_constraintTop_toTopOf="@+id/imageButton25" />
-
-    <ImageButton
-        android:id="@+id/imageButton16"
-        android:layout_width="382dp"
-        android:layout_height="125dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/dropdownlistaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
-
-    <ImageButton
-        android:id="@+id/imageButton19"
-        android:layout_width="382dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="16dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/boxlistaccount"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton13" />
-
-    <ImageButton
-        android:id="@+id/imageButton20"
-        android:layout_width="21dp"
-        android:layout_height="21dp"
-        android:layout_marginEnd="36dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/arrowcircle_up"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton19"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton19"
-        app:layout_constraintTop_toTopOf="@+id/imageButton16"
-        app:layout_constraintVertical_bias="0.438" />
-
-    <ImageView
-        android:id="@+id/imageView12"
-        android:layout_width="58dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="16dp"
-        android:src="@drawable/ppacount_default"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton19"
-        app:layout_constraintStart_toStartOf="@+id/imageButton19"
-        app:layout_constraintTop_toTopOf="@+id/imageButton16"
-        app:layout_constraintVertical_bias="0.423" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="MUHAMMAD RAFLI"
-        android:textColor="#1C3B60"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton19"
-        app:layout_constraintStart_toEndOf="@+id/imageView12"
-        app:layout_constraintTop_toTopOf="@+id/imageButton16"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <ImageButton
-        android:id="@+id/imageButton21"
-        android:layout_width="26dp"
-        android:layout_height="26dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="3dp"
-        android:background="#00FFFFFF"
-        android:scaleType="fitXY"
-        android:src="@drawable/pluscircle"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton16"
-        app:layout_constraintStart_toStartOf="@+id/imageButton16"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton19"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="6dp"
-        android:fontFamily="sans-serif-medium"
-        android:text="Make Host"
-        android:textColor="#1C3B60"
-        app:layout_constraintBottom_toBottomOf="@+id/imageButton16"
-        app:layout_constraintStart_toEndOf="@+id/imageButton21"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton19"
-        app:layout_constraintVertical_bias="0.0" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
