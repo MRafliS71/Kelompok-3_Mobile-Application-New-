@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout3"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PatientPageActivity">
+    tools:context=".PasienPage">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,6 +45,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 android:layout_marginTop="16dp"
+                tools:itemCount="3"
                 app:layout_constraintTop_toBottomOf="@id/back_buttonPatient"
                 tools:listitem="@layout/data_pasien"/>
 

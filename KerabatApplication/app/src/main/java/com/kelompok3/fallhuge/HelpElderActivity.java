@@ -14,6 +14,13 @@ public class HelpElderActivity extends AppCompatActivity {
 
     private Button nearhospitalButton, ppButton;
     private ImageButton xButton;
+
+    @Override
+    public void onBackPressed() {
+        Intent myIntent = new Intent(HelpElderActivity.this, MainpageKerabatActivity.class);
+        HelpElderActivity.this.startActivity(myIntent);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

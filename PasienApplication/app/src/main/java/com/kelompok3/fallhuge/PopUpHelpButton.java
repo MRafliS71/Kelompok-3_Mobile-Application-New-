@@ -44,8 +44,9 @@ public class PopUpHelpButton extends AppCompatActivity {
         swipeButton.setOnActiveListener(new OnActiveListener() {
             @Override
             public void onActive() {
-                Intent myIntent = new Intent(PopUpHelpButton.this, MainPagePatientActivity.class);
-                PopUpHelpButton.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(PopUpHelpButton.this, MainPagePatientActivity.class);
+//                PopUpHelpButton.this.startActivity(myIntent);
             }
         });
     }

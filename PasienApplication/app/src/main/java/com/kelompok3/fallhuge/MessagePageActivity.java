@@ -43,8 +43,9 @@ public class MessagePageActivity extends AppCompatActivity {
         backMessageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MessagePageActivity.this, MainPagePatientActivity.class);
-                MessagePageActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(MessagePageActivity.this, MainPagePatientActivity.class);
+//                MessagePageActivity.this.startActivity(myIntent);
             }
         });
     }

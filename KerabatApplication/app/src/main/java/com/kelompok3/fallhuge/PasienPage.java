@@ -1,34 +1,44 @@
 package com.kelompok3.fallhuge;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.ImageButton;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+
 import java.util.ArrayList;
 
-public class PatientPageActivity extends AppCompatActivity {
+public class PasienPage extends AppCompatActivity {
 
-    private ImageButton backButton;
 //    private RecyclerView patient_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_patient_page);
+        setContentView(R.layout.activity_pasien_page);
         getSupportActionBar().hide();
 
-        backButton = findViewById(R.id.back_buttonPatient);
-        backButton.setOnClickListener(new View.OnClickListener() {
+        ImageButton backButtonPatient = findViewById(R.id.back_buttonPatient);
+        backButtonPatient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(PatientPageActivity.this, MainpageKerabatActivity.class);
-                PatientPageActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(PasienPage.this, MainpageKerabatActivity.class);
+//                PasienPage.this.startActivity(myIntent);
+            }
+        });
+
+        Button tambahPasien = findViewById(R.id.tambahpasien_Button);
+        tambahPasien.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                onBackPressed();
+                Intent myIntent = new Intent(PasienPage.this, MainpageKerabatActivity.class);
+                PasienPage.this.startActivity(myIntent);
             }
         });
 
@@ -44,19 +54,19 @@ public class PatientPageActivity extends AppCompatActivity {
 //        patient_button.setOnClickListener(new View.OnClickListener() {
 //          @Override
 //            public void onClick(View view) {
-//                Intent myIntent = new Intent(PatientPageActivity.this, ProfilePatientPageActivity.class);
-//                PatientPageActivity.this.startActivity(myIntent);
+//                Intent myIntent = new Intent(PasienPage.this, ProfilePasienPage.class);
+//                PasienPage.this.startActivity(myIntent);
 //            }
 //        });
 //        profilePatient_Button.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                Intent myIntent = new Intent(PatientPageActivity.this, ProfilePatientPageActivity.class);
-//                PatientPageActivity.this.startActivity(myIntent);
+//                Intent myIntent = new Intent(PasienPage.this, ProfilePasienPage.class);
+//                PasienPage.this.startActivity(myIntent);
 //            }
 //        });
 
-        setContentView(R.layout.activity_patient_page);
+        setContentView(R.layout.activity_pasien_page);
 
         alElder.add(new Elder("Gordon Ramsay"));
         alElder.add(new Elder("Jackson"));

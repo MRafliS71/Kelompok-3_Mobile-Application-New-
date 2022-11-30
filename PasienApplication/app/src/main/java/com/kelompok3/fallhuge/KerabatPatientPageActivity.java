@@ -30,8 +30,9 @@ public class KerabatPatientPageActivity extends AppCompatActivity {
         backKerabatButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(KerabatPatientPageActivity.this, MainPagePatientActivity.class);
-                KerabatPatientPageActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(KerabatPatientPageActivity.this, MainPagePatientActivity.class);
+//                KerabatPatientPageActivity.this.startActivity(myIntent);
             }
         });
 

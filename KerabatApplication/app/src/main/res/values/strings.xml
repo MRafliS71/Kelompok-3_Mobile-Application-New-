@@ -10,4 +10,7 @@
     <string name="rs_terdekat">RS Terdekat</string>
     <string name="pertolongan_pertama">Pertolongan Pertama</string>
     <string name="tambah_pasien">+ TAMBAH PASIEN</string>
+    <string name="download">DOWNLOAD</string>
+    <string name="upload">UPLOAD</string>
+    <string name="delete">DELETE</string>
 </resources>

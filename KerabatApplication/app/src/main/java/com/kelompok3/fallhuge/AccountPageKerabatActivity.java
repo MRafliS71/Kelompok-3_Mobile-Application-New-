@@ -27,8 +27,9 @@ public class AccountPageKerabatActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(AccountPageKerabatActivity.this, MainpageKerabatActivity.class);
-                AccountPageKerabatActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(AccountPageKerabatActivity.this, MainpageKerabatActivity.class);
+//                AccountPageKerabatActivity.this.startActivity(myIntent);
             }
         });
         editButton.setOnClickListener(new View.OnClickListener() {

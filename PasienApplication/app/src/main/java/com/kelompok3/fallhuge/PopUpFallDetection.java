@@ -43,8 +43,9 @@ public class PopUpFallDetection extends AppCompatActivity {
         swipeButton.setOnActiveListener(new OnActiveListener() {
             @Override
             public void onActive() {
-                Intent myIntent = new Intent(PopUpFallDetection.this, MainPagePatientActivity.class);
-                PopUpFallDetection.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(PopUpFallDetection.this, MainPagePatientActivity.class);
+//                PopUpFallDetection.this.startActivity(myIntent);
             }
         });
     }

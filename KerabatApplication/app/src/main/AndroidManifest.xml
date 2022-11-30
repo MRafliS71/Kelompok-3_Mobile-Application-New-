@@ -15,6 +15,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".PasienPage"
+            android:exported="false" />
+        <activity
             android:name=".NotificationPage"
             android:exported="false" />
         <activity
@@ -78,9 +81,6 @@
         <activity
             android:name=".MainpageKerabatActivity"
             android:exported="true" />
-        <activity
-            android:name=".PatientPageActivity"
-            android:exported="false" />
         <activity
             android:name=".ProfilePatientPageActivity"
             android:exported="false" />

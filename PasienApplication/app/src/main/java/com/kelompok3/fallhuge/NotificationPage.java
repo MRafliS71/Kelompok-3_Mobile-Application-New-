@@ -35,8 +35,9 @@ public class NotificationPage extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(NotificationPage.this, MainPagePatientActivity.class);
-                NotificationPage.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(NotificationPage.this, MainPagePatientActivity.class);
+//                NotificationPage.this.startActivity(myIntent);
             }
         });
     }

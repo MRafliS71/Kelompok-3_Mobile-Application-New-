@@ -32,8 +32,9 @@ public class KerabatLocationActivity extends AppCompatActivity implements OnMapR
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(KerabatLocationActivity.this, MainpageKerabatActivity.class);
-                KerabatLocationActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(KerabatLocationActivity.this, MainpageKerabatActivity.class);
+//                KerabatLocationActivity.this.startActivity(myIntent);
             }
         });
     }

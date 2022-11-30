@@ -24,8 +24,9 @@ public class FirstAidActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(FirstAidActivity.this, MainpageKerabatActivity.class);
-                FirstAidActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(FirstAidActivity.this, MainpageKerabatActivity.class);
+//                FirstAidActivity.this.startActivity(myIntent);
             }
         });
         detailFirstAidButton.setOnClickListener(new View.OnClickListener() {

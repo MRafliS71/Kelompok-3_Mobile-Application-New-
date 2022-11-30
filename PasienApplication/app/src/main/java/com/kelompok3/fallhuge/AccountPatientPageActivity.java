@@ -27,8 +27,9 @@ public class AccountPatientPageActivity extends AppCompatActivity {
         backaccountButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(AccountPatientPageActivity.this, MainPagePatientActivity.class);
-                AccountPatientPageActivity.this.startActivity(myIntent);
+                onBackPressed();
+//                Intent myIntent = new Intent(AccountPatientPageActivity.this, MainPagePatientActivity.class);
+//                AccountPatientPageActivity.this.startActivity(myIntent);
             }
         });
         medicalButton.setOnClickListener(new View.OnClickListener() {

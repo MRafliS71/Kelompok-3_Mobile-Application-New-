@@ -26,7 +26,7 @@ public class ProfilePatientPageActivity extends AppCompatActivity {
             backButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent myIntent = new Intent(ProfilePatientPageActivity.this, PatientPageActivity.class);
+                    Intent myIntent = new Intent(ProfilePatientPageActivity.this, PasienPage.class);
                     ProfilePatientPageActivity.this.startActivity(myIntent);
                 }
             });
