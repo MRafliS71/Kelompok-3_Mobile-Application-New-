@@ -1,8 +1,10 @@
 package com.kelompok3.fallhuge;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
@@ -16,12 +18,37 @@ public class MainPagePatientActivity extends AppCompatActivity {
 
     private ImageButton pesanButton, kerabatButton, accountButton, bantuanButton, notifikasiButton;
     private Button buttonFallSimulation;
+    AlertDialog dialog;
+
+    @Override
+    public void onBackPressed() {
+        dialog.show(); // memanggil fungsi dialog alert yang sudah dibuat jika user mengklik tombol back pada Main Page
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_page_patient);
         getSupportActionBar().hide();
+
+        // deklarasi AertDialog, yang akan mematikan system aplikasi jika user inginkeluar
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Benarkah anda ingin keluar?")
+                .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        moveTaskToBack(true);
+                        android.os.Process.killProcess(android.os.Process.myPid());
+                        System.exit(1);
+                    }
+                })
+                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+        dialog = builder.create();
 
         buttonFallSimulation = findViewById(R.id.buttonFallSimulation);
         buttonFallSimulation.setOnClickListener(new View.OnClickListener() {

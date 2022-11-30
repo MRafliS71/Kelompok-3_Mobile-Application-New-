@@ -13,7 +13,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <ImageButton
                 android:id="@+id/back_buttonPatient"
@@ -21,10 +21,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:background="#00FFFFFF"
-                android:src="@drawable/back_page"
+                android:src="@drawable/backbutton"
                 android:layout_marginStart="16dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"/>
 
             <ImageView
                 android:id="@+id/imageView8"
