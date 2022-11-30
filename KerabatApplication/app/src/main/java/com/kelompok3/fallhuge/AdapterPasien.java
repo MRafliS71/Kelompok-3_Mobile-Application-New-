@@ -38,18 +38,4 @@ public class AdapterPasien extends RecyclerView.Adapter<ViewHolderElder> {
     }
 
 }
-//class Elder {
-//    String elder;
-//
-//    public String getElderName() {
-//        return elder;
-//    }
-//
-//    public void setElderName(String elder) {
-//        this.elder = elder;
-//    }
-//
-//    public Elder(String elder) {
-//        this.elder = elder;
-//    }
-//}
+

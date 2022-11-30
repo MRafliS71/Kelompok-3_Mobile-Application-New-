@@ -6,8 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class ProfilePatientPageActivity extends AppCompatActivity {
 
@@ -26,7 +24,7 @@ public class ProfilePatientPageActivity extends AppCompatActivity {
             backButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent myIntent = new Intent(ProfilePatientPageActivity.this, PasienPage.class);
+                    Intent myIntent = new Intent(ProfilePatientPageActivity.this, PasienPageActivity.class);
                     ProfilePatientPageActivity.this.startActivity(myIntent);
                 }
             });

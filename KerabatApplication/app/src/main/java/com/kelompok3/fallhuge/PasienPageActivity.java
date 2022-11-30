@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
-public class PasienPage extends AppCompatActivity {
+public class PasienPageActivity extends AppCompatActivity {
 
 //    private RecyclerView patient_button;
 
@@ -37,8 +37,8 @@ public class PasienPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 //                onBackPressed();
-                Intent myIntent = new Intent(PasienPage.this, MainpageKerabatActivity.class);
-                PasienPage.this.startActivity(myIntent);
+                Intent myIntent = new Intent(PasienPageActivity.this, MainpageKerabatActivity.class);
+                PasienPageActivity.this.startActivity(myIntent);
             }
         });
 
@@ -46,25 +46,6 @@ public class PasienPage extends AppCompatActivity {
         AdapterPasien adapter;
         RecyclerView rvElder;
         RecyclerView.LayoutManager lm;
-
-//        patient_button = findViewById(R.id.elders);
-
-//        profilePatient_Button = findViewById(R.id.profilePatientButton);
-
-//        patient_button.setOnClickListener(new View.OnClickListener() {
-//          @Override
-//            public void onClick(View view) {
-//                Intent myIntent = new Intent(PasienPage.this, ProfilePasienPage.class);
-//                PasienPage.this.startActivity(myIntent);
-//            }
-//        });
-//        profilePatient_Button.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent myIntent = new Intent(PasienPage.this, ProfilePasienPage.class);
-//                PasienPage.this.startActivity(myIntent);
-//            }
-//        });
 
         setContentView(R.layout.activity_pasien_page);
 

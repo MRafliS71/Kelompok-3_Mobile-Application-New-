@@ -13,12 +13,5 @@ public class MedicalRecordPopUpActivity extends AppCompatActivity {
         setContentView(R.layout.activity_medical_record_pop_up);
         getSupportActionBar().hide();
 
-        DisplayMetrics dm = new DisplayMetrics();
-        getWindowManager().getDefaultDisplay().getMetrics(dm);
-
-        int width = dm.widthPixels;
-        int height = dm.heightPixels;
-
-        getWindow().setLayout((int)(width*.8),(int)(height*.3));
     }
 }

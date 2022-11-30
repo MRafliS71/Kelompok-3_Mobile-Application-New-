@@ -75,7 +75,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         patientButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainpageKerabatActivity.this, PasienPage.class);
+                Intent myIntent = new Intent(MainpageKerabatActivity.this, PasienPageActivity.class);
                 MainpageKerabatActivity.this.startActivity(myIntent);
             }
         });
