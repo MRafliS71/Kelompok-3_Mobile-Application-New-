@@ -17,7 +17,9 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PasienPageActivity extends AppCompatActivity {
+public class PasienPageActivity extends AppCompatActivity implements InterfacePasien{
+
+    List<ClassPasien> pasien = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,18 +29,18 @@ public class PasienPageActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rvPasien);
 
-        List<ClassPasien> pasien = new ArrayList<>();
-        pasien.add(new ClassPasien("Gordon Ramsey"));
-        pasien.add(new ClassPasien("Ronaldo"));
-        pasien.add(new ClassPasien("Mas Juki"));
-        pasien.add(new ClassPasien("Kelompok 3 MobApp"));
-        pasien.add(new ClassPasien("Kece banget"));
-        pasien.add(new ClassPasien("Mantap pisan brow"));
-        pasien.add(new ClassPasien("Mantap pisan brow"));
-        pasien.add(new ClassPasien("Mantap pisan brow"));
+//        public List<ClassPasien> pasien = new ArrayList<>();
+        pasien.add(new ClassPasien("Gordon Ramsey", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Ronaldo", R.drawable.ppexample));
+        pasien.add(new ClassPasien("Mas Juki", R.drawable.ppexample));
+        pasien.add(new ClassPasien("Kelompok 3 MobApp", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Kece banget", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppexample));
+        pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppexample));
+        pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppacount_default));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new AdapterPasien(getApplicationContext(),pasien));
+        recyclerView.setAdapter(new AdapterPasien(getApplicationContext(),pasien, this));
 
         ImageButton backButtonPatient = findViewById(R.id.back_buttonPatient);
         backButtonPatient.setOnClickListener(new View.OnClickListener() {
@@ -61,5 +63,15 @@ public class PasienPageActivity extends AppCompatActivity {
  //               Toast.makeText(getApplicationContext(), "Pasien berhasil ditambahkan", Toast.LENGTH_SHORT).show();
             }
         });
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(PasienPageActivity.this, ProfilePatientPageActivity.class);
+
+        intent.putExtra("NAME", pasien.get(position).getNamePasien());
+        intent.putExtra("ProfilePicture", pasien.get(position).getPpPasien());
+
+        startActivity(intent);
     }
 }

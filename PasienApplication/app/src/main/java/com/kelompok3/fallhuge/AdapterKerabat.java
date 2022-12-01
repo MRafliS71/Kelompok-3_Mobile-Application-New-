@@ -4,13 +4,16 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-public class AdapterKerabat extends RecyclerView.Adapter<ViewHolderKerabat> {
+public class AdapterKerabat extends RecyclerView.Adapter<AdapterKerabat.ViewHolderKerabat> {
 
     Context context;
     List<ClassKerabat> kerabat;
@@ -23,7 +26,7 @@ public class AdapterKerabat extends RecyclerView.Adapter<ViewHolderKerabat> {
     @NonNull
     @Override
     public ViewHolderKerabat onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolderKerabat(LayoutInflater.from(context).inflate(R.layout.kerabat_row,parent,false));
+        return new ViewHolderKerabat(LayoutInflater.from(context).inflate(R.layout.kerabat_row, parent, false));
     }
 
     @Override
@@ -36,5 +39,19 @@ public class AdapterKerabat extends RecyclerView.Adapter<ViewHolderKerabat> {
     @Override
     public int getItemCount() {
         return kerabat.size();
+    }
+
+    public static class ViewHolderKerabat extends RecyclerView.ViewHolder {
+
+        ImageView ppKerabat;
+        TextView nameKerabat;
+        ImageButton dropdownButton;
+
+        public ViewHolderKerabat(@NonNull View itemView) {
+            super(itemView);
+            ppKerabat = itemView.findViewById(R.id.ppKerabat);
+            nameKerabat = itemView.findViewById(R.id.nameKerabat);
+            dropdownButton = itemView.findViewById(R.id.dropdownButton);
+        }
     }
 }
