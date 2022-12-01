@@ -12,9 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProfilePatientPageActivity extends AppCompatActivity {
 
-        private ImageButton backButton;
-        private Button medicalButton;
-
         TextView nameAccountPasien;
         ImageView ppAccountPasien;
 
@@ -33,8 +30,9 @@ public class ProfilePatientPageActivity extends AppCompatActivity {
             nameAccountPasien.setText(namePasien);
             ppAccountPasien.setImageResource(ppPasien);
 
-            backButton = findViewById(R.id.back_buttonProfile);
-            medicalButton = findViewById(R.id.medical_Button);
+            ImageButton backButton = findViewById(R.id.back_buttonProfile);
+            Button medicalButton = findViewById(R.id.medical_Button);
+            Button editButton = findViewById(R.id.edit_Button);
 
             backButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -48,6 +46,13 @@ public class ProfilePatientPageActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view) {
                     Intent myIntent = new Intent(ProfilePatientPageActivity.this, MedicalRecordActivity.class);
+                    ProfilePatientPageActivity.this.startActivity(myIntent);
+                }
+            });
+            editButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent myIntent = new Intent(ProfilePatientPageActivity.this, EditAkunPasienActivity.class);
                     ProfilePatientPageActivity.this.startActivity(myIntent);
                 }
             });
