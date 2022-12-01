@@ -28,13 +28,13 @@ public class MessagePageActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rvMessage);
 
-        List<Message> message = new ArrayList<>();
-        message.add(new Message(R.drawable.point, "Ambilkan Obat"));
-        message.add(new Message(R.drawable.point, "Minta Tolong"));
-        message.add(new Message(R.drawable.point, "Nyalakan AC"));
-        message.add(new Message(R.drawable.point, "Pijat punggung saya"));
-        message.add(new Message(R.drawable.point, "Saya mau jalan2"));
-        message.add(new Message(R.drawable.point, "Saya lapar"));
+        List<ClassMessage> message = new ArrayList<>();
+        message.add(new ClassMessage(R.drawable.point, "Ambilkan Obat"));
+        message.add(new ClassMessage(R.drawable.point, "Minta Tolong"));
+        message.add(new ClassMessage(R.drawable.point, "Nyalakan AC"));
+        message.add(new ClassMessage(R.drawable.point, "Pijat punggung saya"));
+        message.add(new ClassMessage(R.drawable.point, "Saya mau jalan2"));
+        message.add(new ClassMessage(R.drawable.point, "Saya lapar"));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new AdapterMessage(getApplicationContext(),message));

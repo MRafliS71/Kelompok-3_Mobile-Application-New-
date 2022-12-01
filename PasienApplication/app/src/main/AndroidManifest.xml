@@ -25,14 +25,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MedicalRecordPopUpActivity"
-            android:theme="@style/Theme.MyApplication.popUpDownload"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".MedicalRecordActivity"
             android:exported="false">
             <meta-data
@@ -46,7 +38,7 @@
             android:name=".PopUpHelpButton"
             android:exported="true" />
         <activity
-            android:name=".NotificationPage"
+            android:name=".NotificationPageActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreen"

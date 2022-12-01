@@ -25,7 +25,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mainpage_kerabat);
         getSupportActionBar().hide();
 
-        // deklarasi AertDialog, yang akan mematikan system aplikasi jika user inginkeluar
+        // deklarasi AlertDialog, yang akan mematikan system aplikasi jika user inginkeluar
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Benarkah anda ingin keluar?")
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
@@ -61,7 +61,7 @@ public class MainpageKerabatActivity extends AppCompatActivity {
         notifButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainpageKerabatActivity.this, NotificationPage.class);
+                Intent myIntent = new Intent(MainpageKerabatActivity.this, NotificationPageActivity.class);
                 MainpageKerabatActivity.this.startActivity(myIntent);
             }
         });

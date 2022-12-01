@@ -11,10 +11,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class PasienPageActivity extends AppCompatActivity {
-
-//    private RecyclerView patient_button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +21,26 @@ public class PasienPageActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pasien_page);
         getSupportActionBar().hide();
 
+        RecyclerView recyclerView = findViewById(R.id.rvPasien);
+
+        List<ClassPasien> pasien = new ArrayList<>();
+        pasien.add(new ClassPasien("Gordon Ramsey"));
+        pasien.add(new ClassPasien("Ronaldo"));
+        pasien.add(new ClassPasien("Mas Juki"));
+        pasien.add(new ClassPasien("Kelompok 3 MobApp"));
+        pasien.add(new ClassPasien("Kece banget"));
+        pasien.add(new ClassPasien("Mantap pisan brow"));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new AdapterPasien(getApplicationContext(),pasien));
+
         ImageButton backButtonPatient = findViewById(R.id.back_buttonPatient);
         backButtonPatient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 onBackPressed();
-//                Intent myIntent = new Intent(PasienPage.this, MainpageKerabatActivity.class);
-//                PasienPage.this.startActivity(myIntent);
+//                Intent myIntent = new Intent(PasienPageActivity.this, MainpageKerabatActivity.class);
+//                PasienPageActivity.this.startActivity(myIntent);
             }
         });
 
@@ -41,28 +53,5 @@ public class PasienPageActivity extends AppCompatActivity {
                 PasienPageActivity.this.startActivity(myIntent);
             }
         });
-
-        ArrayList<Elder> alElder = new ArrayList<Elder>();
-        AdapterPasien adapter;
-        RecyclerView rvElder;
-        RecyclerView.LayoutManager lm;
-
-        setContentView(R.layout.activity_pasien_page);
-
-        alElder.add(new Elder("Gordon Ramsay"));
-        alElder.add(new Elder("Jackson"));
-
-        rvElder = (RecyclerView) findViewById(R.id.elders);
-
-        //supaya cepat karena ukuran baris tdk berubah.
-        rvElder.setHasFixedSize(true);
-
-        //adapter
-        adapter = new AdapterPasien(alElder);
-        rvElder.setAdapter(adapter);
-
-        //layout manager
-        lm = new LinearLayoutManager(this);
-        rvElder.setLayoutManager(lm);
     }
 }

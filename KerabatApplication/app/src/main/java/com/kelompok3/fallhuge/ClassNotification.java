@@ -1,13 +1,10 @@
 package com.kelompok3.fallhuge;
 
-import java.sql.Date;
-import java.sql.Time;
-
-public class Notification {
+public class ClassNotification {
     String judul, jenis ,waktu, tanggal;
     int ppAcount, bgNotif, ikonNotif;
 
-    public Notification(String judul, String jenis, String waktu, String tanggal, int ppAcount, int bgNotif, int ikonNotif) {
+    public ClassNotification(String judul, String jenis, String waktu, String tanggal, int ppAcount, int bgNotif, int ikonNotif) {
         this.judul = judul;
         this.jenis = jenis;
         this.waktu = waktu;

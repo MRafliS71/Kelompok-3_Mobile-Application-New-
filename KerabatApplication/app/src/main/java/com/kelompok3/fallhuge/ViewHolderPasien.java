@@ -6,11 +6,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ViewHolderElder extends RecyclerView.ViewHolder {
-    public TextView tvElderName;
+public class ViewHolderPasien extends RecyclerView.ViewHolder {
 
-    public ViewHolderElder(@NonNull View itemView) {
+    TextView namePasien;
+
+    public ViewHolderPasien(@NonNull View itemView) {
         super(itemView);
-        tvElderName = itemView.findViewById(R.id.elderName);
+        namePasien = itemView.findViewById(R.id.namePasien);
     }
 }

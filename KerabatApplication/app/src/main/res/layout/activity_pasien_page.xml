@@ -39,7 +39,7 @@
                 app:layout_constraintVertical_bias="0.41000003" />
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/elders"
+                android:id="@+id/rvPasien"
                 android:layout_width="340dp"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
                 android:layout_marginTop="16dp"
                 tools:itemCount="3"
                 app:layout_constraintTop_toBottomOf="@id/back_buttonPatient"
-                tools:listitem="@layout/data_pasien"/>
+                tools:listitem="@layout/patient_row"/>
 
             <Button
                 android:id="@+id/tambahpasien_Button"
@@ -62,7 +62,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/elders"
+                app:layout_constraintTop_toBottomOf="@id/rvPasien"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="30dp"/>
 

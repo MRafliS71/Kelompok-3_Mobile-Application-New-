@@ -1,41 +1,37 @@
 package com.kelompok3.fallhuge;
 
+import android.content.Context;
 import android.view.LayoutInflater;
-import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.util.ArrayList;
+import java.util.List;
 
-public class AdapterPasien extends RecyclerView.Adapter<ViewHolderElder> {
+public class AdapterPasien extends RecyclerView.Adapter<ViewHolderPasien> {
+    Context context;
+    List<ClassPasien> pasien;
 
-    ArrayList<Elder> alElder;
-
-    public AdapterPasien(ArrayList<Elder> alElder) {
-        this.alElder = alElder;
+    public AdapterPasien(Context context, List<ClassPasien> pasien) {
+        this.context = context;
+        this.pasien = pasien;
     }
 
     @NonNull
     @Override
-    public ViewHolderElder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.data_pasien, parent, false);
-        // jangan sampai lupa return viewholder, akan menyebabkan bug yang susah ditrace
-        return new ViewHolderElder(itemView);
+    public ViewHolderPasien onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        return new ViewHolderPasien(LayoutInflater.from(context).inflate(R.layout.patient_row,parent,false));
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolderElder holder, int position) {
-        Elder m = alElder.get(position);
-        holder.tvElderName.setText(m.getElderName());
+    public void onBindViewHolder(@NonNull ViewHolderPasien holder, int position) {
+        holder.namePasien.setText(pasien.get(position).getNamePasien());
     }
 
     @Override
     public int getItemCount() {
-        return alElder.size();
+        return pasien.size();
     }
-
 }
 

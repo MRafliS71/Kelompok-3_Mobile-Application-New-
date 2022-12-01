@@ -22,4 +22,7 @@
     <string name="_12_agustus_2022">12 Agustus 2022</string>
     <string name="_19_26">19.26</string>
     <string name="tambah_pesan">+ TAMBAH PESAN</string>
+    <string name="apakah_anda_ingin_mendownload_file_ini">Apakah Anda Ingin Mendownload FIle Ini?</string>
+    <string name="ya">YA</string>
+    <string name="download">DOWNLOAD</string>
 </resources>

@@ -81,7 +81,7 @@ public class MainPagePatientActivity extends AppCompatActivity {
         notifikasiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent myIntent = new Intent(MainPagePatientActivity.this, NotificationPage.class);
+                Intent myIntent = new Intent(MainPagePatientActivity.this, NotificationPageActivity.class);
                 MainPagePatientActivity.this.startActivity(myIntent);
             }
         });

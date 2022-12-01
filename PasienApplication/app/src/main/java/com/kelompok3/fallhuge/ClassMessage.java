@@ -1,11 +1,11 @@
 package com.kelompok3.fallhuge;
 
-public class Message {
+public class ClassMessage {
 
     private int pointer;
     private String textMessage;
 
-    public Message(int pointer, String textMessage) {
+    public ClassMessage(int pointer, String textMessage) {
         this.pointer = pointer;
         this.textMessage = textMessage;
     }

@@ -38,15 +38,15 @@ public class KerabatPatientPageActivity extends AppCompatActivity {
 
         RecyclerView recyclerView = findViewById(R.id.rvKerabarPatient);
 
-        List<Kerabat> kerabat = new ArrayList<>();
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Muhammad Rafli S", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Muhammad Ghiyats A", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Mochamad Ray M", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Ahmad Muflih I.M.K", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Gordon Ramsey", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Ronaldo", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Messi Pamungkas", R.drawable.arrowcircle_down));
-        kerabat.add(new Kerabat(R.drawable.ppacount_default, "Kamu Nenyee?", R.drawable.arrowcircle_down));
+        List<ClassKerabat> kerabat = new ArrayList<>();
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Muhammad Rafli S", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Muhammad Ghiyats A", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Mochamad Ray M", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Ahmad Muflih I.M.K", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Gordon Ramsey", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Ronaldo", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Messi Pamungkas", R.drawable.arrowcircle_down));
+        kerabat.add(new ClassKerabat(R.drawable.ppacount_default, "Kamu Nenyee?", R.drawable.arrowcircle_down));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new AdapterKerabat(getApplicationContext(),kerabat));

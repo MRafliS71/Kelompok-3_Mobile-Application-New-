@@ -12,9 +12,9 @@ import java.util.List;
 public class AdapterNotif extends RecyclerView.Adapter<ViewHolderNotif> {
 
     Context context;
-    List<Notification> notif;
+    List<ClassNotification> notif;
 
-    public AdapterNotif(Context context, List<Notification> notif) {
+    public AdapterNotif(Context context, List<ClassNotification> notif) {
         this.context = context;
         this.notif = notif;
     }

@@ -13,9 +13,9 @@ import java.util.List;
 public class AdapterKerabat extends RecyclerView.Adapter<ViewHolderKerabat> {
 
     Context context;
-    List<Kerabat> kerabat;
+    List<ClassKerabat> kerabat;
 
-    public AdapterKerabat(Context context, List<Kerabat> kerabat) {
+    public AdapterKerabat(Context context, List<ClassKerabat> kerabat) {
         this.context = context;
         this.kerabat = kerabat;
     }

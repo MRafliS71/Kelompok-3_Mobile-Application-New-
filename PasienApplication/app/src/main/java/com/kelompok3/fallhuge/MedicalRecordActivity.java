@@ -41,7 +41,7 @@ public class MedicalRecordActivity extends AppCompatActivity {
                 myDialog.setContentView(R.layout.activity_medical_record_pop_up);
                 myDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 myDialog.show();
-                Toast.makeText(getApplicationContext(), "Tombol download berfungsi", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(getApplicationContext(), "Tombol download berfungsi", Toast.LENGTH_SHORT).show();
             }
         });
     }

@@ -1,11 +1,12 @@
 package com.kelompok3.fallhuge;
 
-public class Kerabat {
+public class ClassKerabat {
+
     private int ppKerabat;
     private String nameKerabat;
     private int dropdownButton;
 
-    public Kerabat(int ppKerabat, String nameKerabat, int dropdownButton) {
+    public ClassKerabat(int ppKerabat, String nameKerabat, int dropdownButton) {
         this.ppKerabat = ppKerabat;
         this.nameKerabat = nameKerabat;
         this.dropdownButton = dropdownButton;

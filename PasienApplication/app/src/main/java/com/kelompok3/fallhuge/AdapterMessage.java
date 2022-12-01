@@ -12,9 +12,9 @@ import java.util.List;
 public class AdapterMessage extends RecyclerView.Adapter<ViewHolderMessage> {
 
     Context context;
-    List<Message> message;
+    List<ClassMessage> message;
 
-    public AdapterMessage(Context context, List<Message> message) {
+    public AdapterMessage(Context context, List<ClassMessage> message) {
         this.context = context;
         this.message = message;
     }
