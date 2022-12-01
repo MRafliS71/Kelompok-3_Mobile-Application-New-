@@ -8,10 +8,6 @@
     android:background="#EDEEF3"
     tools:context=".KerabatPatientPageActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -42,12 +38,12 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvKerabarPatient"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="40dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                android:layout_marginBottom="70dp"
+                android:layout_width="377dp"
+                android:layout_height="611dp"
                 android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.52"
                 app:layout_constraintStart_toStartOf="parent"
@@ -56,7 +52,5 @@
                 tools:listitem="@layout/kerabat_row" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
 </RelativeLayout>

@@ -7,10 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".PasienPageActivity">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -40,14 +36,14 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvPasien"
-                android:layout_width="340dp"
-                android:layout_height="wrap_content"
+                android:layout_width="343dp"
+                android:layout_height="521dp"
+                android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                android:layout_marginTop="16dp"
-                tools:itemCount="3"
                 app:layout_constraintTop_toBottomOf="@id/back_buttonPatient"
-                tools:listitem="@layout/patient_row"/>
+                tools:itemCount="3"
+                tools:listitem="@layout/patient_row" />
 
             <Button
                 android:id="@+id/tambahpasien_Button"
@@ -67,7 +63,5 @@
                 android:layout_marginBottom="30dp"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
 
 </RelativeLayout>
