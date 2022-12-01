@@ -23,7 +23,7 @@ public class AdapterKerabat extends RecyclerView.Adapter<ViewHolderKerabat> {
     @NonNull
     @Override
     public ViewHolderKerabat onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolderKerabat(LayoutInflater.from(context).inflate(R.layout.list_kerabat,parent,false));
+        return new ViewHolderKerabat(LayoutInflater.from(context).inflate(R.layout.kerabat_row,parent,false));
     }
 
     @Override

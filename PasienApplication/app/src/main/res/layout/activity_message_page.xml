@@ -50,7 +50,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/backMessageButton"
                 tools:itemCount="4"
-                tools:listitem="@layout/list_message"/>
+                tools:listitem="@layout/message_row"/>
 
             <Button
                 android:id="@+id/tambahpasien_Button"

@@ -22,7 +22,7 @@ public class AdapterMessage extends RecyclerView.Adapter<ViewHolderMessage> {
     @NonNull
     @Override
     public ViewHolderMessage onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolderMessage(LayoutInflater.from(context).inflate(R.layout.list_message,parent,false));
+        return new ViewHolderMessage(LayoutInflater.from(context).inflate(R.layout.message_row,parent,false));
     }
 
     @Override

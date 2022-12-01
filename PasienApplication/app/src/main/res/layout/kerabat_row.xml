@@ -7,7 +7,7 @@
     app:cardElevation="7dp"
     android:layout_marginBottom="13dp"
     android:layout_marginHorizontal="15dp">
-    
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
