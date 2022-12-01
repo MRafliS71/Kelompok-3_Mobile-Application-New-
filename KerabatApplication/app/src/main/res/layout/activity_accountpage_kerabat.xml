@@ -177,8 +177,8 @@
 
             <Button
                 android:id="@+id/edit_Button"
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
                 android:backgroundTint="#FCCC12"
                 android:fontFamily="@font/poppins_bold"
                 android:text="EDIT"
@@ -192,8 +192,8 @@
 
             <Button
                 android:id="@+id/logout_Button"
-                android:layout_width="230dp"
-                android:layout_height="wrap_content"
+                android:layout_width="251dp"
+                android:layout_height="56dp"
                 android:layout_marginBottom="40dp"
                 android:backgroundTint="#E91E63"
                 android:fontFamily="@font/poppins_bold"

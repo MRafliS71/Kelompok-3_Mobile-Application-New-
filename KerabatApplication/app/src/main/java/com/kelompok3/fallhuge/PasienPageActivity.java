@@ -30,14 +30,14 @@ public class PasienPageActivity extends AppCompatActivity implements InterfacePa
         RecyclerView recyclerView = findViewById(R.id.rvPasien);
 
 //        public List<ClassPasien> pasien = new ArrayList<>();
-        pasien.add(new ClassPasien("Gordon Ramsey", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Gordon Ramsey", R.drawable.user));
         pasien.add(new ClassPasien("Ronaldo", R.drawable.ppexample));
         pasien.add(new ClassPasien("Mas Juki", R.drawable.ppexample));
-        pasien.add(new ClassPasien("Kelompok 3 MobApp", R.drawable.ppacount_default));
-        pasien.add(new ClassPasien("Kece banget", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Kelompok 3 MobApp", R.drawable.user));
+        pasien.add(new ClassPasien("Kece banget", R.drawable.user));
         pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppexample));
         pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppexample));
-        pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.ppacount_default));
+        pasien.add(new ClassPasien("Mantap pisan brow", R.drawable.user));
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new AdapterPasien(getApplicationContext(),pasien, this));
