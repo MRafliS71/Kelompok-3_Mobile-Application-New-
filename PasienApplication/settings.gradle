@@ -1,18 +1,1 @@
-pluginManagement {
-    repositories {
-        gradlePluginPortal()
-        google()
-        jcenter()
-        maven { url 'https://jitpack.io' }
-    }
-}
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        jcenter()
-        maven { url 'https://jitpack.io' }
-    }
-}
-rootProject.name = "PasienApplication"
 include ':app'

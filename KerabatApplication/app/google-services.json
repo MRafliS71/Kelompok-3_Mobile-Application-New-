@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "453598925237",
+    "project_id": "pasienapplication",
+    "storage_bucket": "pasienapplication.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:453598925237:android:76d80f07ce317e39c309fc",
+        "android_client_info": {
+          "package_name": "com.kelompok3.fallhuge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "453598925237-4b6hrkd8gpkoqj6emcqgpqkh5lfj64lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGtzHlZ23bqj4xCbXWVDgLtb4OaTMHays"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "453598925237-4b6hrkd8gpkoqj6emcqgpqkh5lfj64lj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
